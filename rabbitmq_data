@@ -1,0 +1,11 @@
+/usr/local/opt/rabbitmq/sbin
+❯ ./rabbitmqctl add_user erick erick
+Adding user "erick" ...
+Done. Don't forget to grant the user permissions to some virtual hosts! See 'rabbitmqctl help set_permissions' to learn more.
+
+/usr/local/opt/rabbitmq/sbin
+❯ ./rabbitmqctl add_vhost erickMac
+Adding vhost "erickMac" ...
+
+/usr/local/opt/rabbitmq/sbin
+❯ ./rabbitmqctl set_permissions -p erickMac erick ".*" ".*" ".*"
